@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "MontserratItalic";
+  src: url("/Fonts/Montserrat-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/Fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+#taskContainer{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5dvw;
+}
+
+
+.task{
+  padding: 2dvw;
+  border-radius: 6dvw;
+  display: flex;
+  height: 24.267dvw;
+  width: 92.267dvw;
+  box-shadow: 0 0px 20px 0.1px #00A3FF;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Montserrat";
+  color: #0075FF;
+}
+
+.textCont{
+  max-height: 6dvw;
+  max-width: 75dvw;
+  overflow: hidden;
+}
+.textCont>h1{
+  cursor: default;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 5.067dvw;
+  max-height: 6dvw;
+  max-width: 75dvw;
+  margin-bottom: 1dvw;
+  transition: 2s;
+}
+
+.textCont>h1:hover{
+  overflow: visible;
+  transform: translateX(-100%);
+}
+
+
+.tags{
+  color: #C7C9CB;
+  font-size: small;
+  display: flex;
+  flex-direction: row;
+}
+
+.tags>h2{
+  margin-bottom: 2dvw;
+  font-size: 3dvw;
+  font-family: "Montserrat";
+  margin-right: 1dvw;
+}
+
+.tags>button{
+  background-image: url("/Images/plustag.svg");
+  aspect-ratio: 1/1;
+  width: 3.5dvw;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  background-color: transparent;
+}
+
+.tagsEle{
+  padding: 0;
+  margin: 0;
+}
+
+.tagsEle>ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4dvw;
+  width: 70dvw;
+  height: 10dvw;
+  grid-template-columns: 25% 25% 25% 25% 25%;
+  grid-template-rows: 50% 50%;
+  list-style: none;
+
+}
+
+.tagsEle>ul>li{
+  padding: 0.1dvw;
+  font-size: 3dvw;
+  text-align: center;
+  font-weight: 700;
+  width: 16dvw;
+  height: 3.9dvw;
+  background-color: #0075FF;
+  border-radius: 2dvw;
+  color: white;
+}
+
+.taskBtnCont{
+  align-self: flex-end;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 6dvw;
+  justify-content: flex-end;
+  align-items: flex-end;
+  
+}
+
+.taskBtnCont>button{
+  margin-right: 3dvw;
+  aspect-ratio: 1/1;
+  background-color: transparent;
+  width: 7dvw;
+  height: 7dvw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+}
+
+.checkbtn{
+
+  background-image: url("/Images/uncheck.svg");
+
+}
+
+.trashbtn{
+
+  background-image: url("/Images/trash.svg");
+  width: 8dvw;
+  height: 7dvw;
+
+}
+
+
+#topBar{
+  font-size: 4.5dvw;
+  font-family: "Montserrat";
+  color: #0075FF;
+  height: 20dvw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 3dvw;
+  margin-top: 2dvw;
+}
+
+#topBar>hr{
+  border: 1px solid red;
+  width: 10dvw;
+  rotate: 90deg;
+  border: 0.3dvw solid #0075FF;
+}
+
+.topBtn{
+  text-align: center;
+  padding: 2dvw;
+  border-radius: 8dvw;
+  width: 32dvw;
+  height: 7dvw;
+  box-shadow: none;
+  transition: 0.3s;
+  cursor: default;
+}
+
+.topBtn:hover{
+  box-shadow: 0 0px 6px 0 rgba(129, 129, 129,0.5);
+  border: 1.2px solid rgb(209, 209, 209);
+}
